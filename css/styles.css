@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 :root{
 --color-brand-light:#819B57;
 --color-brand-dark: #465929;
@@ -46,7 +46,7 @@ ul{
 .section-title .accent{
     color: var(--color-brand-dark);
 }
-=======
+
 :root{
 --color-brand-light:#819B57;
 --color-brand-dark: #465929;
@@ -94,4 +94,4 @@ ul{
 .section-title .accent{
     color: var(--color-brand-dark);
 }
->>>>>>> 4eeb60e6d6392b1cd4a25e1276d0c9eaaca208e2
+
