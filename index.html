@@ -168,7 +168,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -264,6 +264,21 @@
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">close</button>
+        <h2>Замовити дзвінок</h2>
+        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form name="contact-form" autocomplete="off" novalidate>
+          <label for="user-name">ім'я</label>
+          <input type="text" id="user-name" name="user-name" />
+          <label for="user-tel">Телефон</label>
+          <input type="tel" id="user-tel" name="user-tel" />
+          <label for="user-email">Електронна пошта</label>
+          <input type="email" id="user-email" name="user-email" />
+          <button type="submit">Замовити дзвінок</button>
+          <p>
+            Натискаючи на кнопку я погоджуюсь з
+            <a href="#">політикою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
