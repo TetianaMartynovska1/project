@@ -1,0 +1,30 @@
+
+@import './utils/fonts';
+@import './utils/variables';
+@import './base';
+@import './utils/utils';
+
+
+.section {
+    padding: 48px 0;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+@import './components/buttons';
+@import './components/links';
+@import './components/header';
+@import './components/hero-section';
+@import './components/advantugest-section';
+@import './components/traditions-section';
+@import './components/Chaf-section';
+@import './components/format-section';
+@import './components/contact-section';
+@import './components/footer';
+@import './components/form';

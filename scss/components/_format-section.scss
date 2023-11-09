@@ -1,0 +1,92 @@
+.format-title {
+    color: var(--color-primary-light);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.formats-title {
+    margin-bottom: 80px;
+    
+}
+
+.formats-container {
+    align-items: center;
+    display: flex;
+    gap: 32px;
+}
+
+.format-text {
+    margin:0;
+    color: var(--color-primary-light);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.formats-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    /* background-image: url('../images/walrus-format.svg'); */
+    padding: 24px;
+    border: 1px solid lightgray;
+    /*remove */
+    border-radius: 16px;
+    height: 444px;
+    background: linear-gradient(180deg,
+            rgba(49, 38, 26, 0) 55.21%,
+            rgba(49, 38, 26, 0.71) 72.92%,
+            #31261a 100%);
+    transition: transform 0.3s;
+}
+
+.formats-card:hover {
+    
+    transform: scale(1.05);
+}
+.format-images{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.formats-list {
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+   
+}
+
+.formats-item {
+    flex-basis: calc((100% - 40px) / 3);
+}
+
+/* Carousel */
+.carousel-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid var(--color-primary-dark);
+    fill: var(--color-primary-dark);
+    flex-shrink: 0;
+}
+
+.carousel-button.next {
+    transform: rotate(180deg);
+}
+
+.carousel-button:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+}
