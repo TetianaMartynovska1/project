@@ -1,0 +1,25 @@
+.contact-sections {
+    padding-bottom: 96px;
+
+    &__container {
+        gap: 32px;
+        display: flex;
+    }
+    &__title {
+        /* max-width: 605px; */
+        margin-bottom: 16px;
+    }
+    &__map {
+        flex-shrink: 0;
+        border: none;
+        border-radius: 16px;
+    }
+    &__form-field{
+        margin-bottom: 24px;
+    }
+    &__button{
+        display: block;
+        margin: 0 auto 24px;
+    }
+}
+
