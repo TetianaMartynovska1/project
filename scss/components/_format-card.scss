@@ -1,5 +1,6 @@
 .format-card {
-    display: flex;
+   overflow: hidden;
+display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
@@ -13,11 +14,6 @@
             rgba(49, 38, 26, 0) 55.21%,
             rgba(49, 38, 26, 0.71) 72.92%,
             #31261a 100%);
-    transition: transform 0.3s;
-&:hover {
-
-        transform: scale(1.05);
-    }
 &__images {
     position: absolute;
     top: 0;
