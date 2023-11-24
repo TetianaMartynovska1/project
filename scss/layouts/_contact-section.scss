@@ -1,5 +1,5 @@
 .contact-sections {
-    padding-bottom: 96px;
+    padding-bottom: 0px;
 
     &__container {
         gap: 24px;
@@ -8,12 +8,19 @@
         @media screen and (min-width:$bp-tablet) {
            flex-direction: row;
            gap: 32px;
+        padding-bottom: 96px;
             }
 
     }
     &__title {
         /* max-width: 605px; */
-        margin-bottom: 16px;
+        margin-bottom: 0px;
+        @media screen and (min-width:$bp-tablet) {
+            margin-bottom: 16px;
+            }
+    }
+    &__paragraph{
+        margin-bottom: 42px;
     }
     &__map {
         flex-shrink: 0;

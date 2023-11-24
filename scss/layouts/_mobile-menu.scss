@@ -1,5 +1,6 @@
 .mobile-menu{
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -11,8 +12,46 @@
         transform: translateX(0)
     }
     &__btn-close{
+        padding: 0;
         position: absolute;
         top: 16px;
         right: 24px;
+        background-color: transparent;
+        border: none;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin: 16px 24px
+    }
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 103px;
+
+    }
+    &__body{
+        display: block;
+    }
+    &__link{
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-primary-dark);
+    }
+    &__logo{
+        fill: var(--color-primary-dark);
+    }
+    &__close-icon{
+        width: 24px;
+        height: 24px;
+    }
+    &__image{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 180px;
+        height: 240px;
     }
 }

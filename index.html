@@ -16,12 +16,16 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a href="/"> <img src="./images/logo.svg" alt="logo" /></a>
+            <svg class="header__logo">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
             <ul class="header__menu">
               <li>
                 <a class="link" href="#traditions-sections">Наші традиції</a>
               </li>
-              <li><a class="link" href="#chefs-sections">Шеф-кухарі</a></li>
+              <li>
+                <a class="link" href="#chefs-sections">Шеф-кухарі</a>
+              </li>
               <li><a class="link" href="#formats-sections">Формати</a></li>
               <li><a class="link" href="#contacs-sections">Контакти</a></li>
             </ul>
@@ -35,10 +39,50 @@
           </button>
           <div class="mobile-menu">
             <button class="mobile-menu__btn-close menu-btn-close" type="button">
-              Close
+              <svg class="mobile-menu__close-icon">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
             </button>
+            <div class="mobile-menu__body">
+              <nav class="mobile-menu__content">
+                <a href="/">
+                  <svg class="mobile-menu__logo header__logo">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                  </svg>
+                </a>
+
+                <ul class="mobile-menu__nav">
+                  <li>
+                    <a
+                      class="mobile-menu__link link"
+                      href="#traditions-sections"
+                      >Наші традиції</a
+                    >
+                  </li>
+                  <li>
+                    <a class="mobile-menu__link link" href="#chefs-sections"
+                      >Шеф-кухарі</a
+                    >
+                  </li>
+                  <li>
+                    <a class="mobile-menu__link link" href="#formats-sections"
+                      >Формати</a
+                    >
+                  </li>
+                  <li>
+                    <a class="mobile-menu__link link" href="#contacs-sections"
+                      >Контакти</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <img
+              class="mobile-menu__image"
+              src="./images/bread-text-image.png"
+              alt="bread-and-text"
+            />
           </div>
-          <script src="./js/mobile-menu.js"></script>
         </div>
       </div>
     </header>
@@ -294,7 +338,9 @@
               <h2 class="contact-sections__title section__title">
                 Приєдуйся до мережі пекарень
               </h2>
-              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <p class="contact-sections__paragraph">
+                Заповни форму, щоб ми звʼязались з тобою!
+              </p>
               <form name="contact-form" autocomplete="on" novalidate>
                 <div class="contact-sections__form-field input">
                   <label class="input__label visually-hidden" for="user-name"
@@ -427,10 +473,14 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-close-btn" type="button">
-          close
+          <svg class="modal__close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
         </button>
-        <h2>Замовити дзвінок</h2>
-        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__paragraph">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
         <form name="modal-form" autocomplete="on">
           <div class="modal__form-field input">
             <label class="form-label visually-hidden" for="user-name"
@@ -480,10 +530,15 @@
             <a class="form-terms__link" href="#">політикою конфіденційності</a>
           </p>
         </form>
+        <img
+          class="modal__image"
+          src="./images/bread-text-image.png"
+          alt="bread-and-text"
+        />
       </div>
     </div>
     <script src="./js/modal.js"></script>
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/formats-slider.js"></script>
   </body>
