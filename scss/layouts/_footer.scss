@@ -5,40 +5,54 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 32px 0;
+    padding-top: 32px;
+
     text-align: center;
     @media screen and (min-width:$bp-tablet) {
+        // padding: 32px 0;
         text-align: left;
         }
     &::before,
     &::after {
         position: absolute;
-        bottom: 0;
         background-repeat: no-repeat;
         content: '';
         }
     &::before {
-        width: 180px;
-        height: 120px;
+        width: 92px;
+        height: 196px;
         left: 0;
-        background-image: url('../images/decor-bread-small.png');
+        bottom: 260px;
+        background-image: url('../images/decor-bread-big-mobile.png');
+        @media screen and (min-width:$bp-tablet) {
+            background-image: url('../images/decor-bread-small.png');
+            width: 180px;
+            height: 120px;
+            bottom: 0;
+            }
 
     }
     &::after {
+        bottom: 0px;
+        width: 112px;
+        height: 100px;
+        right: 0;
+        background-image: url('../images/decor-bread-small-mobile.png');
+        @media screen and (min-width:$bp-tablet) {
+        background-image: url('../images/decor-bread-big.png');
         width: 380px;
         height: 190px;
-        right: 0;
-        background-image: url('../images/decor-bread-big.png');
-        // @media screen and (min-width:$bp-tablet) {
-        //     width: 380px;
-        //     height: 190px;
-        //     }
+        bottom: 0;
+            }
     }
     &__container {
+        position: relative;
+        z-index: 1;
         gap: 20px;
         display: flex;
         flex-direction: column;
         @media screen and (min-width:$bp-tablet) {
+                bottom: 0;
                 flex-basis: 50%;
                 flex-direction: row;
             }
@@ -89,9 +103,8 @@
         fill: var(--color-brand-normal);
     }
     &__address-copyright {
-        font-size: 14px;
-    }
-    &__copyright{
         color: var(--color-secondary-dark);
+        font-size: 14px;
+        margin-bottom: 32px;
     }
 }
